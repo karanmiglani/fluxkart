@@ -1,4 +1,4 @@
-Overview <br>
+<b>Overview </b><br>
 This project involves creating a web service to help FluxKart.com identify and consolidate customer information across multiple orders. <br>The service ensures that customer contacts (either email or phone number) are linked together based on shared information, allowing for a personalized customer experience without duplication.
 
 Service Endpoint<br>
