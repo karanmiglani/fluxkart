@@ -9,10 +9,12 @@ The JSON body can include:<br>
 "email": A string representing the customer's email address.<br>
 "phoneNumber": A string representing the customer's phone number.<br>
 The app can be checked on: https://fluxkart.frenchschool.in/<br>
+
 <b>TechStack:</b><br>
 The service is implemented using:<br>
 Node.js: A JavaScript runtime for server-side applications.<br>
 Express: A web framework for Node.js, simplifying API development and routing.<br>
+
 <b>Screenshots:</b><br>
 ![1](https://github.com/karanmiglani/fluxkart/assets/52616845/009cc0ca-ccbf-4824-8517-662e5af6b9e9)
 ![2](https://github.com/karanmiglani/fluxkart/assets/52616845/21414c15-8d73-47a8-a937-64048fbc8739)
