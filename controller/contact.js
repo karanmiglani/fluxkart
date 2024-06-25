@@ -20,10 +20,10 @@ const identifyContact = async(req , resp) => {
         if(existingContacts.length == 0){
             let queryResult = await helper.insertContact(email ,phoneNumber);
             await connection.commit();
-            return resp.status(200).json({primaryContactId : queryResult.insertId , 
+            return resp.status(200).json({contact :{primaryContactId : queryResult.insertId , 
                 emails : [email] , 
                 phoneNumbers :[phoneNumber] ,
-                 secondaryContactIds :[] });
+                 secondaryContactIds :[] }});
         }else{
             let primaryContact = existingContacts.filter(item => item.linkPrecedence === 'primary')
             primaryContactId = primaryContact[0]?.id ? primaryContact[0]?.id : existingContacts[existingContacts.length-1]?.linkedId
