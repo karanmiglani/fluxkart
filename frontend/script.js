@@ -6,7 +6,7 @@ button.addEventListener('click',async ()=> {
         email : email,
         phoneNumber : phoneNumber
     }
-    let url = 'http://localhost:3000/api/identify'
+    let url = 'https://fluxkart-3bde.onrender.com/api/identify'
     let resp = await fetch(url , {
         method : 'POST',
         headers: {
