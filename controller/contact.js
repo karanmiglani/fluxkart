@@ -59,7 +59,7 @@ const identifyContact = async(req , resp) => {
                 secondaryContact = existingContacts.filter(item => item.linkPrecedence === 'secondary')
                 let primaryContactOfDifferentlinkedId = await helper.checkSecondaryContact(secondaryContact , primaryContactId)
                 if(primaryContactOfDifferentlinkedId.length != 0){
-                    let results  = comparePrimaryContacts(primaryContact , primaryContactOfDifferentlinkedId)
+                    let results  = helper.comparePrimaryContacts(primaryContact , primaryContactOfDifferentlinkedId)
                     primaryContact = results.contact
                     primaryContactId = primaryContact.id
                     updatedLinkedId = primaryContact.id
